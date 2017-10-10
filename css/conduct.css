@@ -16,51 +16,204 @@
   background-size: cover;
   -webkit-animation-name: kenburns;
           animation-name: kenburns;
+    /* -webkit-animation-name: bg;
+          animation-name: bg; */
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  -webkit-animation-duration: 40s;
-          animation-duration: 40s;
+  -webkit-animation-duration: 32s;
+          animation-duration: 32s;
+  /* -webkit-animation-duration: 20s;
+          animation-duration: 20s; */
   -webkit-animation-delay:2s;
           animation-delay:2s;
   opacity: 1;
   filter: blur(0px);
-  -webkit-filter: blur(0px);  /* chrome, opera */
+  -webkit-filter: blur(0px); 
   -ms-filter: blur(0px);
   -moz-filter: blur(0px);
   -webkit-transform: scale(1);
           transform: scale(1);
 
 }
-
+/* 5张背景图  */
 .slideshow-image:nth-child(1) {
   -webkit-animation-name: kenburns-1;
           animation-name: kenburns-1;
-  z-index: 4;
+  z-index: 3;
 }
 .slideshow-image:nth-child(2) {
   -webkit-animation-name: kenburns-2;
           animation-name: kenburns-2;
-  z-index: 3;
+  z-index: 2;
 }
 .slideshow-image:nth-child(3) {
   -webkit-animation-name: kenburns-3;
           animation-name: kenburns-3;
-  z-index: 2;
+  z-index: 1;
 }
 .slideshow-image:nth-child(4) {
   -webkit-animation-name: kenburns-4;
           animation-name: kenburns-4;
-  z-index: 1;
+  z-index: 0;
 }
-.slideshow-image:nth-child(5) {
+/* .slideshow-image:nth-child(5) {
   -webkit-animation-name: kenburns-5;
           animation-name: kenburns-5;
   z-index: 0;
+} */
+/* 2张背景图 */
+/* .slideshow-image:nth-child(2) {
+  -webkit-animation-name: bg-1;
+          animation-name: bg-1;
+  z-index: 1;
 }
-
-@-webkit-keyframes kenburns-1 {
+.slideshow-image:nth-child(1) {
+  -webkit-animation-name: bg-2;
+          animation-name: bg-2;
+  z-index: 0;
+}  */
+@-webkit-keyframes bg-1 {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  46% {
+    opacity: 0;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);  
+    -ms-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);  
+    -ms-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  98.4375% {
+    opacity: 0;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);  
+    -ms-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes bg-1 {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    opacity: 1;
+  }
+  40.4375% {
+    opacity: 1;
+  }
+  46% {
+    opacity: 0;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);  
+    -ms-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);  
+    -ms-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  98.4375% {
+    opacity: 0;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);  
+    -ms-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes bg-2 {
+  40.4375% {
+    opacity: 1;
+    filter: blur(0px);
+    -webkit-filter: blur(0px); 
+    -ms-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  80% {
+    opacity: 1;
+  }
+  98.4375% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    filter: blur(3px);
+    -webkit-filter: blur(3px); 
+    -ms-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+@keyframes bg-2 {
+  40.4375% {
+    opacity: 1;
+    filter: blur(0px);
+    -webkit-filter: blur(0px); 
+    -ms-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  80% {
+    opacity: 1;
+  }
+  98.4375% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    filter: blur(3px);
+    -webkit-filter: blur(3px); 
+    -ms-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+/* 5张背景图的动画 */
+/* @-webkit-keyframes kenburns-1 {
   0% {
     opacity: 1;
     -webkit-transform: scale(1);
@@ -75,7 +228,7 @@
   20.5625% {
     opacity: 0;
     filter: blur(3px);
-    -webkit-filter: blur(3px);  /* chrome, opera */
+    -webkit-filter: blur(3px); 
     -ms-filter: blur(3px);
     -moz-filter: blur(3px);
     -webkit-transform: scale(1.2);
@@ -84,7 +237,7 @@
   100% {
     opacity: 0;
     filter: blur(0px);
-    -webkit-filter: blur(0px);  /* chrome, opera */
+    -webkit-filter: blur(0px); 
     -ms-filter: blur(0px);
     -moz-filter: blur(0px);
     -webkit-transform: scale(1);
@@ -93,7 +246,7 @@
   98.4375% {
     opacity: 0;
     filter: blur(0px);
-    -webkit-filter: blur(0px);  /* chrome, opera */
+    -webkit-filter: blur(0px); 
     -ms-filter: blur(0px);
     -moz-filter: blur(0px);
     -webkit-transform: scale(1);
@@ -103,7 +256,6 @@
     opacity: 1;
   }
 }
-
 @keyframes kenburns-1 {
   0% {
     opacity: 1;
@@ -119,7 +271,7 @@
   20.5625% {
     opacity: 0;
     filter: blur(3px);
-    -webkit-filter: blur(3px);  /* chrome, opera */
+    -webkit-filter: blur(3px); 
     -ms-filter: blur(3px);
     -moz-filter: blur(3px);
     -webkit-transform: scale(1.2);
@@ -128,7 +280,7 @@
   100% {
     opacity: 0;
     filter: blur(0px);
-    -webkit-filter: blur(0px);  /* chrome, opera */
+    -webkit-filter: blur(0px); 
     -ms-filter: blur(0px);
     -moz-filter: blur(0px);
     -webkit-transform: scale(1);
@@ -137,7 +289,7 @@
   98.4375% {
     opacity: 0;
     filter: blur(0px);
-    -webkit-filter: blur(0px);  /* chrome, opera */
+    -webkit-filter: blur(0px); 
     -ms-filter: blur(0px);
     -moz-filter: blur(0px);
     -webkit-transform: scale(1);
@@ -151,7 +303,7 @@
   17.4375% {
     opacity: 1;
     filter: blur(0px);
-    -webkit-filter: blur(0px);  /* chrome, opera */
+    -webkit-filter: blur(0px); 
     -ms-filter: blur(0px);
     -moz-filter: blur(0px);
     -webkit-transform: scale(1.1);
@@ -166,7 +318,7 @@
   40.5625% {
     opacity: 0;
     filter: blur(3px);
-    -webkit-filter: blur(3px);  /* chrome, opera */
+    -webkit-filter: blur(3px); 
     -ms-filter: blur(3px);
     -moz-filter: blur(3px);
     -webkit-transform: scale(1.2);
@@ -182,7 +334,7 @@
   17.4375% {
     opacity: 1;
     filter: blur(0px);
-    -webkit-filter: blur(0px);  /* chrome, opera */
+    -webkit-filter: blur(0px); 
     -ms-filter: blur(0px);
     -moz-filter: blur(0px);
     -webkit-transform: scale(1.1);
@@ -197,7 +349,7 @@
   40.5625% {
     opacity: 0;
     filter: blur(3px);
-    -webkit-filter: blur(3px);  /* chrome, opera */
+    -webkit-filter: blur(3px); 
     -ms-filter: blur(3px);
     -moz-filter: blur(3px);
     -webkit-transform: scale(1.2);
@@ -213,7 +365,7 @@
   32.4375% {
     opacity: 1;
     filter: blur(0px);
-    -webkit-filter: blur(0px);  /* chrome, opera */
+    -webkit-filter: blur(0px); 
     -ms-filter: blur(0px);
     -moz-filter: blur(0px);
     -webkit-transform: scale(1);
@@ -228,7 +380,7 @@
   60.5625% {
     opacity: 0;
     filter: blur(3px);
-    -webkit-filter: blur(3px);  /* chrome, opera */
+    -webkit-filter: blur(3px); 
     -ms-filter: blur(3px);
     -moz-filter: blur(3px);
     -webkit-transform: scale(1.2);
@@ -237,7 +389,7 @@
   100% {
     opacity: 0;
     filter: blur(0px);
-    -webkit-filter: blur(0px);  /* chrome, opera */
+    -webkit-filter: blur(0px); 
     -ms-filter: blur(0px);
     -moz-filter: blur(0px);
     -webkit-transform: scale(1);
@@ -248,7 +400,7 @@
   32.4375% {
     opacity: 1;
     filter: blur(0px);
-    -webkit-filter: blur(0px);  /* chrome, opera */
+    -webkit-filter: blur(0px); 
     -ms-filter: blur(0px);
     -moz-filter: blur(0px);
     -webkit-transform: scale(1);
@@ -263,7 +415,7 @@
   60.5625% {
     opacity: 0;
     filter: blur(3px);
-    -webkit-filter: blur(3px);  /* chrome, opera */
+    -webkit-filter: blur(3px); 
     -ms-filter: blur(3px);
     -moz-filter: blur(3px);
     -webkit-transform: scale(1.2);
@@ -272,7 +424,7 @@
   100% {
     opacity: 0;
     filter: blur(0px);
-    -webkit-filter: blur(0px);  /* chrome, opera */
+    -webkit-filter: blur(0px); 
     -ms-filter: blur(0px);
     -moz-filter: blur(0px);
     -webkit-transform: scale(1);
@@ -283,7 +435,7 @@
   53.4375% {
     opacity: 1;
     filter: blur(0px);
-    -webkit-filter: blur(0px);  /* chrome, opera */
+    -webkit-filter: blur(0px); 
     -ms-filter: blur(0px);
     -moz-filter: blur(0px);
     -webkit-transform: scale(1);
@@ -298,7 +450,7 @@
   80% {
     opacity: 0;
     filter: blur(3px);
-    -webkit-filter: blur(3px);  /* chrome, opera */
+    -webkit-filter: blur(3px); 
     -ms-filter: blur(3px);
     -moz-filter: blur(3px);
     -webkit-transform: scale(1.2);
@@ -307,7 +459,7 @@
   100% {
     opacity: 0;
     filter: blur(0px);
-    -webkit-filter: blur(0px);  /* chrome, opera */
+    -webkit-filter: blur(0px); 
     -ms-filter: blur(0px);
     -moz-filter: blur(0px);
     -webkit-transform: scale(1);
@@ -318,7 +470,7 @@
   53.4375% {
     opacity: 1;
     filter: blur(0px);
-    -webkit-filter: blur(0px);  /* chrome, opera */
+    -webkit-filter: blur(0px); 
     -ms-filter: blur(0px);
     -moz-filter: blur(0px);
     -webkit-transform: scale(1);
@@ -333,7 +485,7 @@
   80% {
     opacity: 0;
     filter: blur(3px);
-    -webkit-filter: blur(3px);  /* chrome, opera */
+    -webkit-filter: blur(3px); 
     -ms-filter: blur(3px);
     -moz-filter: blur(3px);
     -webkit-transform: scale(1.2);
@@ -342,7 +494,7 @@
   100% {
     opacity: 0;
     filter: blur(0px);
-    -webkit-filter: blur(0px);  /* chrome, opera */
+    -webkit-filter: blur(0px); 
     -ms-filter: blur(0px);
     -moz-filter: blur(0px);
     -webkit-transform: scale(1);
@@ -353,7 +505,7 @@
   72.4375% {
     opacity: 1;
     filter: blur(0px);
-    -webkit-filter: blur(0px);  /* chrome, opera */
+    -webkit-filter: blur(0px); 
     -ms-filter: blur(0px);
     -moz-filter: blur(0px);
     -webkit-transform: scale(1);
@@ -368,7 +520,7 @@
   100% {
     opacity: 0;
     filter: blur(3px);
-    -webkit-filter: blur(3px);  /* chrome, opera */
+    -webkit-filter: blur(3px); 
     -ms-filter: blur(3px);
     -moz-filter: blur(3px);
     -webkit-transform: scale(1.2);
@@ -379,7 +531,7 @@
   72.4375% {
     opacity: 1;
     filter: blur(0px);
-    -webkit-filter: blur(0px);  /* chrome, opera */
+    -webkit-filter: blur(0px); 
     -ms-filter: blur(0px);
     -moz-filter: blur(0px);
     -webkit-transform: scale(1);
@@ -394,13 +546,284 @@
   100% {
     opacity: 0;
     filter: blur(3px);
-    -webkit-filter: blur(3px);  /* chrome, opera */
+    -webkit-filter: blur(3px); 
     -ms-filter: blur(3px);
     -moz-filter: blur(3px);
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
   }
+} */
+/* 四张背景图 */
+@-webkit-keyframes kenburns-1 {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  1.5625% {
+    opacity: 1;
+  }
+  23.4375% {
+    opacity: 1;
+  }
+  26.5625% {
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+            filter: blur(3px);
+            -webkit-filter: blur(3px);  /* chrome, opera */
+            -ms-filter: blur(3px);
+            -moz-filter: blur(3px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+            filter: blur(0px);
+            -webkit-filter: blur(0px);  /* chrome, opera */
+            -ms-filter: blur(0px);
+            -moz-filter: blur(0px);
+  }
+  98.4375% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+  }
 }
+
+@keyframes kenburns-1 {
+    0% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+      }
+      1.5625% {
+        opacity: 1;
+      }
+      23.4375% {
+        opacity: 1;
+      }
+      26.5625% {
+        opacity: 0;
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+                filter: blur(3px);
+                -webkit-filter: blur(3px);  /* chrome, opera */
+                -ms-filter: blur(3px);
+                -moz-filter: blur(3px);
+      }
+      100% {
+        opacity: 0;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+                filter: blur(0px);
+                -webkit-filter: blur(0px);  /* chrome, opera */
+                -ms-filter: blur(0px);
+                -moz-filter: blur(0px);
+      }
+      98.4375% {
+        opacity: 0;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+      }
+      100% {
+        opacity: 1;
+      }
+}
+@-webkit-keyframes kenburns-2 {
+  23.4375% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  26.5625% {
+    opacity: 1;
+  }
+  48.4375% {
+    opacity: 1;
+  }
+  51.5625% {
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+            filter: blur(3px);
+                -webkit-filter: blur(3px);  /* chrome, opera */
+                -ms-filter: blur(3px);
+                -moz-filter: blur(3px);
+            
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+                            filter: blur(0px);
+                -webkit-filter: blur(0px);  /* chrome, opera */
+                -ms-filter: blur(0px);
+                -moz-filter: blur(0px);
+  }
+}
+@keyframes kenburns-2 {
+    23.4375% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+                filter: blur(0px);
+                    -webkit-filter: blur(0px);  /* chrome, opera */
+                    -ms-filter: blur(0px);
+                    -moz-filter: blur(0px);
+      }
+      26.5625% {
+        opacity: 1;
+      }
+      48.4375% {
+        opacity: 1;
+      }
+      51.5625% {
+        opacity: 0;
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+                filter: blur(3px);
+                    -webkit-filter: blur(3px);  /* chrome, opera */
+                    -ms-filter: blur(3px);
+                    -moz-filter: blur(3px);
+                
+      }
+      100% {
+        opacity: 0;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+                                filter: blur(0px);
+                    -webkit-filter: blur(0px);  /* chrome, opera */
+                    -ms-filter: blur(0px);
+                    -moz-filter: blur(0px);
+      }
+}
+@-webkit-keyframes kenburns-3 {
+  48.4375% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+            filter: blur(0px);
+                    -webkit-filter: blur(0px);  /* chrome, opera */
+                    -ms-filter: blur(0px);
+                    -moz-filter: blur(0px);
+  }
+  51.5625% {
+    opacity: 1;
+  }
+  73.4375% {
+    opacity: 1;
+  }
+  76.5625% {
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+            filter: blur(3px);
+                    -webkit-filter: blur(3px);  /* chrome, opera */
+                    -ms-filter: blur(3px);
+                    -moz-filter: blur(3px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+            filter: blur(0px);
+                    -webkit-filter: blur(0px);  /* chrome, opera */
+                    -ms-filter: blur(0px);
+                    -moz-filter: blur(0px);
+  }
+}
+@keyframes kenburns-3 {
+    48.4375% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+                filter: blur(0px);
+                    -webkit-filter: blur(0px);  /* chrome, opera */
+                    -ms-filter: blur(0px);
+                    -moz-filter: blur(0px);
+      }
+      51.5625% {
+        opacity: 1;
+      }
+      73.4375% {
+        opacity: 1;
+      }
+      76.5625% {
+        opacity: 0;
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+                filter: blur(3px);
+                        -webkit-filter: blur(3px);  /* chrome, opera */
+                        -ms-filter: blur(3px);
+                        -moz-filter: blur(3px);
+      }
+      100% {
+        opacity: 0;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+                filter: blur(0px);
+                        -webkit-filter: blur(0px);  /* chrome, opera */
+                        -ms-filter: blur(0px);
+                        -moz-filter: blur(0px);
+      }
+}
+@-webkit-keyframes kenburns-4 {
+  73.4375% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+            filter: blur(0px);
+                        -webkit-filter: blur(0px);  /* chrome, opera */
+                        -ms-filter: blur(0px);
+                        -moz-filter: blur(0px);
+  }
+  76.5625% {
+    opacity: 1;
+  }
+  98.4375% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+            filter: blur(3px);
+                        -webkit-filter: blur(3px);  /* chrome, opera */
+                        -ms-filter: blur(3px);
+                        -moz-filter: blur(3px);
+  }
+}
+@keyframes kenburns-4 {
+  73.4375% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+            filter: blur(0px);
+                        -webkit-filter: blur(0px);  /* chrome, opera */
+                        -ms-filter: blur(0px);
+                        -moz-filter: blur(0px);
+  }
+  76.5625% {
+    opacity: 1;
+  }
+  98.4375% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+            filter: blur(3px);
+                        -webkit-filter: blur(3px);  /* chrome, opera */
+                        -ms-filter: blur(3px);
+                        -moz-filter: blur(3px);
+  }
+}
+
 .wrap .head{
   width: 100%;
   position: fixed;
@@ -846,3 +1269,88 @@
 #my-video{
   margin: 0 auto;
 }
+/* 赛事章程 */
+.fourPage{
+  width: 100%;
+}
+/* 内容部分 */
+.fourPageCon{
+  width: 86%;
+  margin: 0 auto 60px;
+}
+.fourWhereList{
+  font-size: 16px;
+  color: #444444;
+  margin: 40px 0 27px 0;
+}
+/* 内容文章css */
+.fourPageArticle h2{
+  font-size: 24px;
+  color: #222222;
+  letter-spacing: 0.5px;
+  font-weight: normal;
+}
+.fourPageArticle p{
+  font-size: 17px;
+  color: #222222;
+  letter-spacing: 0.47px;
+  line-height: 28px;
+  margin: 23px 0 0 0;
+  text-align: justify;
+  text-indent: 2em;
+}
+/* 头部导航条 */
+.fourPageHeader{
+  width: 100%;
+  background: rgba(0,0,0,0.80);
+  border: 1px solid #222222;
+  height: 88px;
+}
+.fourHeader{
+  width: 86%;
+  overflow: hidden;
+  margin: 0 auto 0 ;
+}
+.fourHeaderImg{
+  float: left;
+  width: 192px;
+  height: 56px;
+  margin: 17px 0 0 0;
+}
+.fourHeaderCon{
+  float: right;
+  margin: 29px 0 0 0;
+  overflow: hidden;
+}
+.fourHeaderCon p{
+  width: 140px;
+  height: 31px;
+  text-align: center;
+  line-height: 31px;
+  float: left;
+}
+.fourHeaderCon p span{
+  font-size: 16px;
+  color: #F2F2F2;
+  cursor: pointer;
+}
+.fourHeaderCon p span.fourCheck{
+  font-size: 16px;
+  color: #D53B49;
+  border-bottom: 2px solid  #D53B49;
+}
+/* 统一的底部 */
+.fourFooter{
+  width: 100%;
+  height: 292px;
+  background: #181818;
+}
+.fourFooterCon{
+  width: 86%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.fourFooterCon .footerLeft{
+  padding: 80px 0 0 100px;
+}
+
