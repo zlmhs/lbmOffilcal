@@ -3,9 +3,9 @@ function resetZoom(){
     var winH = document.documentElement.clientHeight;
     var wrap = document.getElementsByClassName('wrap')[0];
     var scale = winW/1366;
-    console.log(winW);
-    console.log(winH);
-    console.log(scale);
+    // console.log(winW);
+    // console.log(winH);
+    // console.log(scale);
     // var realH = winH/scale;
     document.body.style.zoom = scale;
     // wrap.style.height = realH-108 +'px';
