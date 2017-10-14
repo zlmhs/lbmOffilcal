@@ -7,8 +7,7 @@
   <link rel="stylesheet" href="../css/public.css">
   <link rel="stylesheet" href="../css/conduct.css">
   <script src="../js/autoAdapt.js"></script>
-  <link rel="stylesheet" href="../css/video-js.css">
-  <title>视频详情</title>
+  <title>图集详情</title>
 </head>
 <body>
   <div class="fourPage" id="videoDetails">
@@ -41,66 +40,22 @@
     </div>
     <!-- 内容部分 -->
     <div class="newsDetailsCon">
-        <p class="whichMatchDT">您现在的位置：首页 > <span class="whichMatchDetails">16届赛事</span> > 视频专区 > 视频详情</p>
+        <p class="whichMatchDT">您现在的位置：首页 > <span class="whichMatchDetails">16届赛事</span> > 图集专区 > 图集详情</p>
         <p class="newsDetailsTitle">你知道吗？像学说话一样,听音乐也有“黄金期”</p>
         <p class="newsDetailTitleSide">
             <img  src="../images/bluecircle.png" alt="">
             <span class="matchDetailType">声乐比赛</span>
             <span class="newsDetailsTime">2017-01-01</span>
         </p>
-        <!-- 视频 -->
-        <div class="videoDetailCon">
-            <video id="my-video2" class="video-js vjs-big-play-centered"  poster="http://cdn.yinyuewujie.com/o_1bpvfmj2sacs589jkej6q1i7p9.mp4?vframe/jpg/offset/38"  playsinline="true" controls preload height="586" data-setup="{}" >
-                <source src="http://cdn.yinyuewujie.com/o_1bpvfmj2sacs589jkej6q1i7p9.mp4" type="video/mp4">
-            </video>
-        </div>
-        <!-- 相关视频 -->
-        <div class="videoDetailAbout">
-            <h2>相关视频</h2>
-            <div class="pictureConList">
-                <div>
-                    <img class="pictureListBig" src="../images/1.png" alt="">
-                    <img class="videoPlay" src="../images/play.png" alt="">
-                    <span class="pictureNum">03:23</span>
-                    <p class="pictureListDe">你知道吗？像学说话一样,听音乐也有“黄金期”</p>
-                    <p class="pictureListB">
-                        <img class="blueCicle" src="../images/bluecircle.png" alt="">
-                        <span class="pictureListType">乐器</span>
-                        <span class="pictureListTime">2017-09-01</span>
-                    </p>
-                </div>
-                <div>
-                    <img class="pictureListBig" src="../images/1.png" alt="">
-                    <img class="videoPlay" src="../images/play.png" alt="">
-                    <span class="pictureNum">03:23</span>
-                    <p class="pictureListDe">你知道吗？像学说话一样,听音乐也有“黄金期”</p>
-                    <p class="pictureListB">
-                        <img class="blueCicle" src="../images/bluecircle.png" alt="">
-                        <span class="pictureListType">乐器</span>
-                        <span class="pictureListTime">2017-09-01</span>
-                    </p>
-                </div>
-                <div>
-                    <img class="pictureListBig" src="../images/1.png" alt="">
-                    <img class="videoPlay" src="../images/play.png" alt="">
-                    <span class="pictureNum">03:23</span>
-                    <p class="pictureListDe">你知道吗？像学说话一样,听音乐也有“黄金期”</p>
-                    <p class="pictureListB">
-                        <img class="blueCicle" src="../images/bluecircle.png" alt="">
-                        <span class="pictureListType">乐器</span>
-                        <span class="pictureListTime">2017-09-01</span>
-                    </p>
-                </div>
-                <div>
-                    <img class="pictureListBig" src="../images/1.png" alt="">
-                    <img class="videoPlay" src="../images/play.png" alt="">
-                    <span class="pictureNum">03:23</span>
-                    <p class="pictureListDe">你知道吗？像学说话一样,听音乐也有“黄金期”</p>
-                    <p class="pictureListB">
-                        <img class="blueCicle" src="../images/bluecircle.png" alt="">
-                        <span class="pictureListType">乐器</span>
-                        <span class="pictureListTime">2017-09-01</span>
-                    </p>
+        <!-- 图集 -->
+        <div class="pictureDetailCon">
+            <img class="pictureDetailImgShow" src="../images/4.png" alt="">
+            <div class="pictureDetailImgIntro">
+                <p class="pictureDetailIntroLeft">你知道吗？像学说话一样,听音乐也有“黄金期”你知道吗？像学说话一样,听音乐也有“黄金期”你知道吗？像学说话一样,听音乐也有“黄金期”你知道吗？像学说话一样,听音乐也有“黄金期”</p>
+                <div class="pictureDetailIntroRight">
+                    <p class="detailButtonClick"><button class="imgPre"></button><img src="../images/left.png" alt=""></p>
+                    <p class="detailPageNum"><span class="detailPagePre">1</span>/ <span class="detailPageNext">8</span></p>
+                    <p class="detailButtonClick"><button class="imgNext"></button><img src="../images/right.png" alt=""></p>
                 </div>
             </div>
         </div>
@@ -159,20 +114,20 @@
           ICP经营许可证：京B2-20170763 网络文化经营许可证：京网文󞪐] 6123-817 号
       </div>
     </div>
-    <script src="http://vjs.zencdn.net/5.18.4/video.min.js"></script>
-  <script>
-    //   跳转到新闻列表
-    function gotoNewsList(){
-        location.href='newsList.html';
-    }
-    //跳转到图集列表
-    function gotoPictureList(){
-        location.href='pictureList.html';
-    }
-    //跳转到视频列表
-    function gotoVideoList(){
-        location.href='videoList.html';
-    }
-  </script>
+    <script src="../js/jquery.js"></script>
+    <script>
+        //   跳转到新闻列表
+        function gotoNewsList(){
+            location.href='newsList.html';
+        }
+        //跳转到图集列表
+        function gotoPictureList(){
+            location.href='pictureList.html';
+        }
+        //跳转到视频列表
+        function gotoVideoList(){
+            location.href='videoList.html';
+        }
+    </script>
 </body>
 </html>

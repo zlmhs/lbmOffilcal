@@ -15,23 +15,26 @@
     <div class="fourPageHeader">
         <div class="fourHeader">
             <img class="fourHeaderImg" src="../images/fourLOGO.png" alt="">
-            <div class="search">
+            <!-- <div class="search">
               <img class="searchImg" src="../images/search.jpg" alt="">
               <input class="searchCon" type="text" placeholder="关键字查找">
-            </div>
+            </div> -->
             <div class="fourHeaderCon">
-              <p>
-                  <span onclick="location.href='index.html'">首页</span>
-              </p>
-              <p>
-                  <span>赛事章程</span>
-              </p>
-              <p>
-                  <span>院校录取及奖学金</span>
-              </p>
-              <p>
-                  <span>留学评估</span>
-              </p>
+                <p>
+                    <span onclick="location.href='index.html'">首页</span>
+                </p>
+                <p>
+                    <span onclick="gotoNewsList()">新闻</span>
+                </p>
+                <p>
+                    <span onclick="gotoVideoList()">视频</span>
+                </p>
+                <p>
+                    <span onclick="gotoPictureList()">图集</span>
+                </p>
+                <p>
+                    <span>比赛结果</span>
+                </p>
             </div>
           </div>
     </div>
@@ -39,7 +42,7 @@
     <div class="pictureCon">
         <p class="pianoNewsT" style="text-align:left;"><span>精彩图集</span> &nbsp;<span class="allTitleEn">Photo</span></p>
         <div class="pictureConList">
-            <div>
+            <div onclick="gotoPictureDetail()">
                 <img class="pictureListBig" src="../images/1.png" alt="">
                 <span class="pictureNum">14图</span>
                 <p class="pictureListDe">你知道吗？像学说话一样,听音乐也有“黄金期”</p>
@@ -149,7 +152,22 @@
       </div>
   </div>
   <script>
-    
+    //   跳转到新闻列表
+    function gotoNewsList(){
+        location.href='newsList.html';
+    }
+    //跳转到图集列表
+    function gotoPictureList(){
+        location.href='pictureList.html';
+    }
+    //跳转到视频列表
+    function gotoVideoList(){
+        location.href='videoList.html';
+    }
+    //跳转到图集详情
+    function gotoPictureDetail(){
+        location.href='pictureDetail.html';
+    }
   </script>
 </body>
 </html>
