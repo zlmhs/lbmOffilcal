@@ -1268,7 +1268,7 @@
 /* 内容部分 */
 .fourPageCon{
   width: 86%;
-  margin: 0 auto 60px;
+  margin: 100px auto 60px;
 }
 .fourWhereList{
   font-size: 16px;
@@ -2047,4 +2047,185 @@
 }
 .pictureDetailIntroRight p.detailButtonClick img{
 
+}
+.matchMainHeader{
+  width: 87%;
+  margin: 0 auto;
+}
+.matchMainHeader img{
+  width: 590px;
+  height: 54px;
+  display: block;
+  margin: 40px auto 0;
+}
+.matchMainHeaderCon{
+  height: 47px;
+  width: 100%;
+  text-align: center;
+  border-bottom:1px solid #EEEEEE;
+  border-top:1px solid #EEEEEE;
+  line-height: 47px;
+  margin: 36px 0 33px 0;
+}
+.matchMainHeaderCon span{
+  display: inline-block;
+  font-size: 16px;
+  color: #666666;
+  letter-spacing: 1px;
+  line-height: 16px;
+  margin: 0 56px 0 0;
+  height: 47px;
+  line-height: 47px;
+  cursor: pointer;
+}
+.matchMainHeaderCon span:hover{
+  color: #222222;
+  border-bottom: 1px solid #000;
+}
+.matchMainBanner{
+  position: relative;
+}
+.matchMainBannerImg{
+  width: 100%;
+  height: 560px;
+}
+.matchMainBannerDiv{
+  position: absolute;
+  left: 50%;
+  top: 523px;
+  width: 773px;
+  overflow: hidden;
+  background: #FFFFFF;
+  border: 1px solid #ECECEC;
+  border-radius: 2px;
+  padding: 39px 0 38px 48px;
+  margin: 0 0 0 -386px;
+}
+.matchMainBannerDivLeft{
+  float: left;
+  margin: 12px 85px  0 0;
+}
+.matchMainBannerDivLeft span{
+  display: block;
+  font-size: 24px;
+  color: #444444;
+  letter-spacing: 1px;
+}
+.matchMainBannerDivLeft span:nth-of-type(2){
+  font-size: 14px;
+  color: #444444;
+}
+.matchMainBannerDivRight{
+  float:left;
+  width: 474px;
+  height: 88px;
+}
+.matchMainCon{
+  width: 87%;
+  margin: 205px auto 0;
+  overflow: hidden;
+}
+.matchMainAbstractLeft{
+  width: 769px;
+  float: left;
+  margin: 0 30px 0 0;
+}
+.matchMainAbstractRight{
+  float: left;
+  width: 369px;
+  margin: 62px 0 0 0;
+}
+.matchMainAbstractRight img{
+  width: 264px;
+  height: 435px;
+  display: block;
+  margin: 38px 0 0 0;
+}
+.matchMainAbstractRightP{
+  width: 237px;
+  border: 1px solid #505050;
+  border-radius: 2px;
+  height: 57px;
+  padding: 9px 0 0 0;
+}
+.matchMainAbstractRightP span{
+  display: block;
+  font-size: 18px;
+  color: #2D2D2D;
+  letter-spacing: 2.06px;
+  text-align:center;
+}
+.matchMainAbstractRightP span:nth-of-type(2){
+  font-size: 14px;
+  color: #2D2D2D;
+  letter-spacing: 1.6px;
+  line-height: 14px;
+}
+.matchMainAbstractT{
+  text-align: center;
+}
+.matchMainAbstractT span{
+  font-size: 24px;
+  color: #444444;
+  letter-spacing: 1px;
+  line-height: 24px;
+  display: block;
+}
+.matchMainAbstractT span:nth-of-type(2){
+  margin: 12px 0 33px 0;
+  font-size: 14px;
+}
+.matchMainPicture{
+  width: 87%;
+  margin: 0 auto;
+}
+.matchMainPictureT{
+  width: 100%;
+  text-align: center;
+}
+.matchMainPictureT span{
+  font-size: 24px;
+  color: #444444;
+  letter-spacing: 1px;
+  line-height: 24px;
+  display: block;
+}
+.matchMainPictureT span:nth-of-type(2){
+  font-size: 14px;
+  color: #444444;
+  letter-spacing: 1.6px;
+  line-height: 16px;
+  margin: 11px 0 33px 0;
+}
+.matchMainPictureCon{
+  width: 100%;
+  overflow: hidden;
+}
+.matchMainPictureCon>div{
+  float: left;
+}
+.matchMainPictureLeft{
+  width: 888px;
+}
+.matchMianPictureRight{
+  width: 281px;
+}
+.matchMianPictureRight img{
+  width: 281px;
+  height: 656px;
+}
+.matchMainPictureLeft img{
+  height: 320px;
+  float: left;
+  margin: 0 16px 16px 0;
+}
+.matchMainPictureLeft img.matchMainPictureLeftB{
+  width: 576px;
+}
+.matchMainPictureLeft img.matchMainPictureLeftL{
+  width: 280px;
+}
+#juryList .fourHeaderCon,#macthRules .fourHeaderCon{
+  float: left;
+  margin: 16px 0 0 280px;
 }
