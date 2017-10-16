@@ -1693,8 +1693,8 @@
   margin: 16px 0 0 0;
 }
 .newFooterXu{
-  margin: 24px 0 0 0;
-  width: 100%;
+  margin: 24px auto 0;
+  width: 77%;
   height: 53px;
   line-height: 53px;
   text-align: center;
@@ -2139,7 +2139,7 @@
   width: 264px;
   height: 435px;
   display: block;
-  margin: 38px 0 0 0;
+  margin: 38px auto 135px;
 }
 .matchMainAbstractRightP{
   width: 237px;
@@ -2147,6 +2147,7 @@
   border-radius: 2px;
   height: 57px;
   padding: 9px 0 0 0;
+  margin: 0 auto;
 }
 .matchMainAbstractRightP span{
   display: block;
@@ -2228,4 +2229,12 @@
 #juryList .fourHeaderCon,#macthRules .fourHeaderCon{
   float: left;
   margin: 16px 0 0 280px;
+}
+.matchMainAbstractCon p{
+  font-size: 14px;
+  color: #444444;
+  letter-spacing: 1.6px;
+  line-height: 24px;
+  text-align: justify;
+  text-indent: 2em;
 }
